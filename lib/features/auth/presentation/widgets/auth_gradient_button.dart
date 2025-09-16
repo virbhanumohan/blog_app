@@ -2,12 +2,12 @@ import 'package:blog_app/core/theme/app_pallete.dart';
 import 'package:flutter/material.dart';
 
 class AuthGradientButton extends StatelessWidget {
-  // final String text;
+  final String text;
   // final VoidCallback onPressed;
 
   const AuthGradientButton({
     super.key,
-    // required this.text,
+    required this.text,
     // required this.onPressed,
   });
 
@@ -34,7 +34,7 @@ class AuthGradientButton extends StatelessWidget {
           ),
         ),
         child: Text(
-          "Sign Up",
+          text,
           style: const TextStyle(color: Colors.white, fontSize: 16),
         ),
       ),
